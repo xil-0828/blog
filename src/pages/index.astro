@@ -18,13 +18,23 @@ const posts = (await getCollection("blog")).sort(
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
 
-  <body class="text-black min-h-screen flex flex-col gap-[20px]">
+  <body class="text-black min-h-screen flex flex-col gap-[24px]">
 
   <Header />
 
-  <main class="w-[960px] mx-auto flex-1 grid grid-cols-[repeat(3,281px)] gap-x-[59px] gap-y-[20px] items-start">
-      {posts.map(post => (
-        <div class="w-[281px] flex flex-col gap-[4px] self-start">
+  <main class="
+  w-[960px]
+  mx-auto
+  flex-1
+  grid
+  grid-cols-[repeat(3,281px)]
+  gap-x-[59px]
+  gap-y-[44px]
+  items-start
+  content-start
+">
+     {posts.map(post => (
+        <div class="w-[281px] h-[196px] flex flex-col gap-[4px] self-start">
 
           {post.data.heroImage && (
             <a href={`/blog/${post.id}/`} class="block">
