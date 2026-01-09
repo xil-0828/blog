@@ -22,17 +22,25 @@ const posts = (await getCollection("blog")).sort(
 
   <Header />
 
-  <main class="
-  w-[960px]
-  mx-auto
-  flex-1
-  grid
-  grid-cols-[repeat(3,281px)]
-  gap-x-[59px]
-  gap-y-[44px]
-  items-start
-  content-start
-">
+  <main
+  class="
+   
+    mx-auto
+    flex-1
+
+    grid
+    grid-cols-1
+    min-[720px]:grid-cols-2
+    min-[960px]:grid-cols-3
+
+    gap-x-[60px]
+    gap-y-[44px]
+
+    justify-center
+    items-start
+    content-start
+  "
+>
      {posts.map(post => (
         <div class="w-[281px] h-[196px] flex flex-col gap-[4px] self-start">
 
