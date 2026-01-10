@@ -41,7 +41,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ### Output
 
-![blog placeholder](../../assets/blog-placeholder-about.jpg)
+![Markdown guide placeholder illustration](../../assets/blog-placeholder-about.jpg)
 
 ## Blockquotes
 
