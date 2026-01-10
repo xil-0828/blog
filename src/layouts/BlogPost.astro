@@ -8,7 +8,8 @@ import Header from "../components/Header.astro";
 import { SITE_TITLE } from "../consts";
 
 type Props = CollectionEntry<"blog">["data"];
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, summary, tags, pubDate, updatedDate, heroImage } =
+  Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const jsonLd = {
   "@context": "https://schema.org",
@@ -70,6 +71,20 @@ const jsonLd = {
           }
 
           <h1 class="text-3xl font-bold mt-4">{title}</h1>
+          {(summary || description) && (
+            <p class="text-base text-muted-foreground mt-3">
+              {summary ?? description}
+            </p>
+          )}
+          {tags?.length ? (
+            <div class="mt-4 flex flex-wrap justify-center gap-2">
+              {tags.map((tag) => (
+                <span class="text-xs font-medium px-2 py-1 rounded-full bg-gray-100">
+                  #{tag}
+                </span>
+              ))}
+            </div>
+          ) : null}
           <hr class="mt-6" />
         </div>
 

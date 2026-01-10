@@ -1,6 +1,8 @@
 ---
 title: 'Second post'
 description: 'Lorem ipsum dolor sit amet'
+summary: 'Highlights from the second entry with a quick takeaway.'
+tags: ['update', 'lorem']
 pubDate: 'Jul 15 2022'
 heroImage: '../../assets/blog-placeholder-4.jpg'
 ---

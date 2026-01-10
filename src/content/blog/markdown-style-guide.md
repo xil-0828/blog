@@ -1,6 +1,8 @@
 ---
 title: '「看板」から「心臓」へ。Endless SHOCKが25年間、伝説であり続けた理由'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+summary: 'A quick reference for Markdown elements supported in Astro content.'
+tags: ['markdown', 'guide']
 pubDate: 'Jun 19 2024'
 heroImage: '../../assets/blog-placeholder-1.jpg'
 ---

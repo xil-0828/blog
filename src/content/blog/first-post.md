@@ -1,6 +1,8 @@
 ---
 title: 'First post'
 description: 'Lorem ipsum dolor sit amet'
+summary: 'A short overview of the first post and its main idea.'
+tags: ['intro', 'lorem']
 pubDate: 'Jul 08 2022'
 heroImage: '../../assets/blog-placeholder-3.jpg'
 ---

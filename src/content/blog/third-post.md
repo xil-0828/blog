@@ -1,6 +1,8 @@
 ---
 title: 'Third post'
 description: 'Lorem ipsum dolor sit amet'
+summary: 'A concise summary for the third post in the series.'
+tags: ['series', 'lorem']
 pubDate: 'Jul 22 2022'
 heroImage: '../../assets/blog-placeholder-2.jpg'
 ---

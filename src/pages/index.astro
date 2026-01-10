@@ -41,8 +41,8 @@ const posts = (await getCollection("blog")).sort(
     content-start
   "
 >
-     {posts.map(post => (
-        <div class="w-[281px] h-[196px] flex flex-col gap-[4px] self-start">
+      {posts.map(post => (
+        <div class="w-[281px] min-h-[196px] flex flex-col gap-[4px] self-start">
 
           {post.data.heroImage && (
             <a href={`/blog/${post.id}/`} class="block">
@@ -62,6 +62,22 @@ const posts = (await getCollection("blog")).sort(
             {post.data.title}
           </div>
 
+          {(post.data.summary || post.data.description) && (
+            <div class="text-[12px] text-[#7c7c7c] leading-relaxed">
+              {post.data.summary ?? post.data.description}
+            </div>
+          )}
+
+          {post.data.tags?.length ? (
+            <div class="flex flex-wrap gap-1">
+              {post.data.tags.map((tag) => (
+                <span class="text-[10px] px-2 py-0.5 rounded-full bg-gray-100">
+                  #{tag}
+                </span>
+              ))}
+            </div>
+          ) : null}
+
           <div class="text-[12px] text-[#7c7c7c]">
             <FormattedDate date={post.data.pubDate} />
           </div>
@@ -77,5 +93,3 @@ const posts = (await getCollection("blog")).sort(
 </body>
 
 </html>
-
-
