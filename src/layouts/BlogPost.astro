@@ -106,17 +106,6 @@ const breadcrumbJsonLd = {
       type="application/ld+json"
       set:html={JSON.stringify(breadcrumbJsonLd)}
     />
-    {
-      heroImage && (
-        <link
-          rel="preload"
-          as="image"
-          href={heroImage.src}
-          imagesrcset={heroImage.src}
-        />
-      )
-    }
-
     <style is:inline>
       .article-main {
         width: 720px;
@@ -147,8 +136,8 @@ const breadcrumbJsonLd = {
           heroImage && (
             <Image
               src={heroImage}
-              width={1000}
-              height={500}
+              widths={[480, 720, 1020]}
+              sizes="(max-width: 640px) 92vw, (max-width: 1024px) 720px, 720px"
               alt={title}
               class="rounded-xl shadow-lg mb-8 mx-auto"
               loading="eager"
