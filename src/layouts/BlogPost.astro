@@ -40,22 +40,21 @@ const articleJsonLd = {
     "@id": canonicalURL.toString(),
   },
   author: {
-  "@type": "Person",
-  "@id": "https://almondis.com/#author",
-  name: "Almond",
-},
-publisher: {
-  "@type": "Organization",
-  "@id": "https://almondis.com/#organization",
-  name: SITE_TITLE,
-  logo: {
-    "@type": "ImageObject",
-    url: "https://almondis.com/logo.png",
-    width: 512,
-    height: 512,
+    "@type": "Person",
+    "@id": "https://almondis.com/#author",
+    name: "Almond",
   },
-},
-
+  publisher: {
+    "@type": "Organization",
+    "@id": "https://almondis.com/#organization",
+    name: SITE_TITLE,
+    logo: {
+      "@type": "ImageObject",
+      url: "https://almondis.com/logo.png",
+      width: 512,
+      height: 512,
+    },
+  },
 };
 
 // Breadcrumb JSON-LD
@@ -98,17 +97,25 @@ const breadcrumbJsonLd = {
 
     <!-- Article structured data -->
     <script
-  type="application/ld+json"
-  set:html={JSON.stringify(articleJsonLd)}
-></script>
-
+      type="application/ld+json"
+      set:html={JSON.stringify(articleJsonLd)}
+    />
 
     <!-- Breadcrumb structured data -->
-   <script
-  type="application/ld+json"
-  set:html={JSON.stringify(breadcrumbJsonLd)}
-></script>
-
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(breadcrumbJsonLd)}
+    />
+    {
+      heroImage && (
+        <link
+          rel="preload"
+          as="image"
+          href={heroImage.src}
+          imagesrcset={heroImage.src}
+        />
+      )
+    }
   </head>
 
   <body class="bg-white text-black flex flex-col gap-[64px]">
@@ -124,6 +131,9 @@ const breadcrumbJsonLd = {
               height={640}
               alt={title}
               class="rounded-xl shadow-lg mb-8 mx-auto"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
             />
           )
         }
@@ -149,21 +159,25 @@ const breadcrumbJsonLd = {
           <slot />
         </div>
 
-        {(summary || description) && (
-          <p class="text-base text-muted-foreground mt-3">
-            {summary ?? description}
-          </p>
-        )}
+        {
+          (summary || description) && (
+            <p class="text-base text-muted-foreground mt-3">
+              {summary ?? description}
+            </p>
+          )
+        }
 
-        {tags?.length ? (
-          <div class="mt-4 flex flex-wrap justify-center gap-2">
-            {tags.map((tag) => (
-              <span class="text-xs font-medium px-2 py-1 rounded-full bg-gray-100">
-                #{tag}
-              </span>
-            ))}
-          </div>
-        ) : null}
+        {
+          tags?.length ? (
+            <div class="mt-4 flex flex-wrap justify-center gap-2">
+              {tags.map((tag) => (
+                <span class="text-xs font-medium px-2 py-1 rounded-full bg-gray-100">
+                  #{tag}
+                </span>
+              ))}
+            </div>
+          ) : null
+        }
       </article>
     </main>
 
