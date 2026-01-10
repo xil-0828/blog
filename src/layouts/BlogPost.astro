@@ -93,14 +93,18 @@ const breadcrumbJsonLd = {
     />
 
     <!-- Article structured data -->
-    <script type="application/ld+json">
-      {JSON.stringify(articleJsonLd)}
-    </script>
+    <script
+  type="application/ld+json"
+  set:html={JSON.stringify(articleJsonLd)}
+></script>
+
 
     <!-- Breadcrumb structured data -->
-    <script type="application/ld+json">
-      {JSON.stringify(breadcrumbJsonLd)}
-    </script>
+   <script
+  type="application/ld+json"
+  set:html={JSON.stringify(breadcrumbJsonLd)}
+></script>
+
   </head>
 
   <body class="bg-white text-black flex flex-col gap-[64px]">
