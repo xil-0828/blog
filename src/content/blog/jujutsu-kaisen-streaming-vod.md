@@ -5,7 +5,7 @@ description: '呪術廻戦アニメの配信状況を主要VOD別に解説。無
 tags: ['呪術廻戦', 'アニメ', 'VOD', '配信', 'どこで見れる']
 pubDate: 'Jan 11 2026'
 updatedDate: 'Jan 11 2026'
-heroImage: '../../assets/2026-anime-recommendations/hero.webp'
+heroImage: '../../assets/2026-anime-recommendations/jujutsu-kaisen-s3.webp'
 ---
 
 アニメ「呪術廻戦」は、現在も根強い人気を誇るダークファンタジー作品です。
