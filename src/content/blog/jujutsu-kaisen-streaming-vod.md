@@ -38,6 +38,7 @@ heroImage: '../../assets/2026-anime-recommendations/hero.webp'
 ---
 
 ## Netflixで呪術廻戦は見れる？
+公式： [Netflix公式サイトで呪術廻戦を確認する](https://www.netflix.com/search?q=呪術廻戦)
 
 **見れます。**
 
@@ -48,6 +49,8 @@ Netflixでは、TVシリーズと劇場版が見放題対象になっている�
 ---
 
 ## Amazon Prime Videoで見れる？
+公式： [Amazon Prime Video公式サイトで呪術廻戦を確認する](https://www.amazon.co.jp/s?k=呪術廻戦&i=instant-video)
+
 
 **見れます。**
 
@@ -58,6 +61,8 @@ Amazonプライム会員の特典（送料無料、Prime Music、Prime Reading�
 ---
 
 ## dアニメストアで見れる？
+公式： [dアニメストア公式サイトで呪術廻戦を確認する](https://animestore.docomo.ne.jp/animestore/sch_pc?searchKey=呪術廻戦)
+
 
 **見れます。**
 
@@ -73,6 +78,8 @@ Amazonプライム会員の特典（送料無料、Prime Music、Prime Reading�
 
 ## U-NEXTで見れる？
 
+公式： [U-NEXT公式サイトで呪術廻戦を確認する](https://video.unext.jp/search?query=呪術廻戦)
+
 **見れます。**
 
 U-NEXTは、以下の特徴があります。
@@ -86,6 +93,7 @@ U-NEXTは、以下の特徴があります。
 ---
 
 ## DMM TVで見れる？
+公式： [DMM TV公式サイトで呪術廻戦を確認する](https://tv.dmm.com/vod/list/?keyword=呪術廻戦)
 
 **見れます。**
 
