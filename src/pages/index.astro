@@ -10,13 +10,29 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
----
 
+const itemListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: posts.map((post, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: post.data.title,
+    url: `https://almondis.com/blog/${post.id}/`,
+  })),
+};
+---
 <!doctype html>
 <html lang="ja">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+
+    <!-- Blog list structured data -->
+    <script type="application/ld+json">
+      {JSON.stringify(itemListJsonLd)}
+    </script>
   </head>
+
 
   <body class="text-black min-h-screen flex flex-col gap-[24px]">
 
@@ -24,7 +40,6 @@ const posts = (await getCollection("blog")).sort(
 
   <main
   class="
-   
     mx-auto
     flex-1
 
