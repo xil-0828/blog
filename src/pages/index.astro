@@ -14,13 +14,18 @@ const posts = (await getCollection("blog")).sort(
 const itemListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
+  "@id": "https://almondis.com/blog/#itemlist",
   itemListElement: posts.map((post, index) => ({
     "@type": "ListItem",
     position: index + 1,
     name: post.data.title,
-    url: `https://almondis.com/blog/${post.id}/`,
+    item: {
+      "@type": "WebPage",
+      "@id": `https://almondis.com/blog/${post.id}/`,
+    },
   })),
 };
+
 ---
 <!doctype html>
 <html lang="ja">

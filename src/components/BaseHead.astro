@@ -74,3 +74,33 @@ const {
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image.src, Astro.url)} />
 <meta property="twitter:image:alt" content={title} />
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://almondis.com/#website",
+  name: SITE_TITLE,
+  url: "https://almondis.com",
+  inLanguage: "ja"
+})} />
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://almondis.com/#organization",
+  name: SITE_TITLE,
+  url: "https://almondis.com",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://almondis.com/logo.png",
+    width: 512,
+    height: 512
+  }
+})} />
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://almondis.com/#author",
+  name: "Almond",
+  url: "https://almondis.com"
+})} />
