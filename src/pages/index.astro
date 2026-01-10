@@ -71,9 +71,11 @@ const itemListJsonLd = {
               <div class="w-[281px] h-[147px] rounded-[8px] overflow-hidden bg-gray-100 transition hover:opacity-90">
                 <Image
                   src={post.data.heroImage}
-                  width={562}
-                  height={294}
+                  width={281}
+                  height={147}
                   alt={post.data.title}
+                  loading="lazy"
+                  decoding="async"
                   class="w-full h-full object-cover"
                 />
               </div>
