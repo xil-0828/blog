@@ -71,7 +71,14 @@ const jsonLd = {
           }
 
           <h1 class="text-3xl font-bold mt-4">{title}</h1>
-          {(summary || description) && (
+          
+          <hr class="mt-6" />
+        </div>
+
+        <div class="markdown-body mx-auto">
+          <slot />
+        </div>
+        {(summary || description) && (
             <p class="text-base text-muted-foreground mt-3">
               {summary ?? description}
             </p>
@@ -85,12 +92,6 @@ const jsonLd = {
               ))}
             </div>
           ) : null}
-          <hr class="mt-6" />
-        </div>
-
-        <div class="markdown-body mx-auto">
-          <slot />
-        </div>
       </article>
     </main>
 
