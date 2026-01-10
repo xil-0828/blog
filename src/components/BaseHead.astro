@@ -122,3 +122,19 @@ const {
   name: "Almond",
   url: "https://almondis.com"
 })} />
+{
+  image && (
+    <link
+      rel="preload"
+      as="image"
+      href={new URL(image.src, Astro.url).toString()}
+      imagesrcset={[
+        `${image.src} 480w`,
+        `${image.src} 720w`,
+        `${image.src} 1020w`,
+      ].join(', ')}
+      imagesizes="(max-width: 640px) 92vw, (max-width: 1024px) 720px, 720px"
+      fetchpriority="high"
+    />
+  )
+}
