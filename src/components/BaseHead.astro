@@ -40,6 +40,24 @@ const {
 />
 <meta name="generator" content={Astro.generator} />
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W0DT37K1Y8"></script>
+<script is:inline>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-W0DT37K1Y8');
+</script>
+<script is:inline>
+	document.addEventListener('astro:page-load', () => {
+		if (window.gtag) {
+			gtag('config', 'G-W0DT37K1Y8', {
+				page_path: window.location.pathname,
+			});
+		}
+	});
+</script>
+
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 
