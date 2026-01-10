@@ -1,0 +1,144 @@
+---
+title: 'CLANNAD AFTER STORYはどこで見れる？配信VODまとめ【最新版】'
+summary: 'CLANNAD AFTER STORY（アニメ）がどの動画配信サービスで視聴できるのかを、Amazon Prime Video・dアニメストア・U-NEXT・DMM TVなど主要VODごとにまとめました。'
+description: 'CLANNAD AFTER STORYのアニメ配信状況を主要VOD別に解説。見放題対応や無料体験の有無もあわせて紹介します。'
+tags: ['CLANNAD', 'CLANNAD AFTER STORY', 'アニメ', 'VOD', '配信', 'どこで見れる']
+pubDate: 'Jan 11 2026'
+updatedDate: 'Jan 11 2026'
+heroImage: '../../assets/2026-nakeru-anime/clannad-after.webp'
+---
+
+アニメ「**CLANNAD AFTER STORY**」は、
+
+恋愛・家族・人生を描き切った、  
+いわゆる「泣けるアニメ」の代表格とも言われる名作です。
+
+この記事では、
+
+**CLANNAD AFTER STORYがどのVODで見れるのか**、  
+**見放題対応しているサービス**や**無料体験で視聴できるか**をまとめています。
+
+---
+
+## 目次
+
+- [CLANNAD AFTER STORYの配信状況一覧](#clannad-after-storyの配信状況一覧)
+- [NetflixでCLANNAD AFTER STORYは見れる？](#netflixでclannad-after-storyは見れる)
+- [Amazon Prime Videoで見れる？](#amazon-prime-videoで見れる)
+- [dアニメストアで見れる？](#dアニメストアで見れる)
+- [U-NEXTで見れる？](#u-nextで見れる)
+- [DMM TVで見れる？](#dmm-tvで見れる)
+- [どのVODがおすすめ？](#どのvodがおすすめ)
+- [まとめ](#まとめ)
+
+---
+
+## CLANNAD AFTER STORYの配信状況一覧
+
+| VODサービス | 配信状況 | 無料体験 |
+| --- | --- | --- |
+| Netflix | 配信なし | なし |
+| Amazon Prime Video | レンタル / 購入 | 30日間 |
+| dアニメストア | 見放題 | 31日間 |
+| U-NEXT | 見放題 | 31日間 |
+| DMM TV | 見放題 | 14日間 |
+
+※ 配信状況は変更される可能性があります。
+
+---
+
+## NetflixでCLANNAD AFTER STORYは見れる？
+
+公式：  
+[Netflix公式サイトで「CLANNAD AFTER STORY」を検索する](https://www.netflix.com/search?q=CLANNAD%20AFTER%20STORY)
+
+**見れません。**
+
+現在、Netflixでは  
+CLANNAD AFTER STORYは配信されていません。
+
+---
+
+## Amazon Prime Videoで見れる？
+
+公式：  
+[Amazon Prime Video公式サイトで「CLANNAD AFTER STORY」を確認する](https://www.amazon.co.jp/s?k=CLANNAD&i=instant-video)
+
+**見れます（レンタル / 購入）**。
+
+Amazon Prime Videoでは、  
+見放題ではなくレンタル・購入形式で提供されています。
+
+---
+
+## dアニメストアで見れる？
+
+公式：  
+[dアニメストア公式サイトで「CLANNAD AFTER STORY」を確認する](https://animestore.docomo.ne.jp/animestore/sch_pc?searchKey=CLANNAD)
+
+**見れます（見放題）**。
+
+dアニメストアはアニメ特化型サービスのため、
+
+- 見放題対象になりやすい  
+- 月額料金が安い  
+- アニメ視聴に特化している  
+
+という点が特徴です。
+
+---
+
+## U-NEXTで見れる？
+
+公式：  
+[U-NEXT公式サイトで「CLANNAD AFTER STORY」を確認する](https://video.unext.jp/search?query=CLANNAD)
+
+**見れます（見放題）**。
+
+U-NEXTでは、
+
+- 31日間の無料体験  
+- 見放題作品数の多さ  
+
+といったメリットがあります。
+
+---
+
+## DMM TVで見れる？
+
+公式：  
+[DMM TV公式サイトで「CLANNAD AFTER STORY」を確認する](https://tv.dmm.com/vod/list/?keyword=CLANNAD)
+
+**見れます（見放題）**。
+
+DMM TVは、
+
+- 月額料金が安い  
+- アニメ作品が充実している  
+
+という点から、  
+コスパ重視の人に向いているVODです。
+
+---
+
+## どのVODがおすすめ？
+
+目的別にまとめると、以下のようになります。
+
+- **見放題で一気見したい** → U-NEXT / dアニメストア / DMM TV  
+- **レンタルでもOK（単品視聴）** → Amazon Prime Video  
+- **Netflix派** → 現在は非対応のため他VOD推奨  
+
+---
+
+## まとめ
+
+CLANNAD AFTER STORYは、
+
+Netflixを除く主要な動画配信サービスで視聴できます。
+
+- **無料体験で見たい人** → U-NEXT / dアニメストア / DMM TV  
+- **単品で見たい人** → Amazon Prime Video  
+
+自分の視聴スタイルに合ったサービスで、  
+CLANNAD AFTER STORYを楽しんでください。
