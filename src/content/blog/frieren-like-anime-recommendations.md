@@ -4,7 +4,7 @@ summary: 'フリーレンの「静かな語り」「時間の流れ」「喪失�
 description: '葬送のフリーレンが好きな人におすすめの5作品を、共通する「静かな感情」「時間の重み」「喪失の余韻」という切り口から解説。'
 tags: ['アニメ', 'フリーレン', 'おすすめ', 'ファンタジー', '感動']
 pubDate: 'Jan 11 2025'
-heroImage: '../../assets/frieren-like-anime-recommendations/frieren-recommendations.jpg'
+heroImage: '../../assets/frieren-like-anime-recommendations/frieren-recommendations.webp'
 ---
 「葬送のフリーレン」を観終わったあと、似た余韻を味わえる作品を探していませんか?
 
