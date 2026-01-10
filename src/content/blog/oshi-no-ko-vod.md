@@ -1,20 +1,20 @@
 ---
-title: '葬送のフリーレンはどこで見れる？配信VODまとめ【最新版】'
-summary: '葬送のフリーレン（アニメ）がどの動画配信サービスで視聴できるのかを、Netflix・Amazon Prime Video・dアニメストアなど主要VODごとにまとめました。'
-description: '葬送のフリーレンのアニメ配信状況を主要VOD別に解説。見放題対応や無料体験の有無もあわせて紹介します。'
-tags: ['葬送のフリーレン', 'アニメ', 'VOD', '配信', 'どこで見れる']
+title: '【推しの子】はどこで見れる？配信VODまとめ【最新版】'
+summary: '【推しの子】（アニメ）がどの動画配信サービスで視聴できるのかを、Netflix・Amazon Prime Video・dアニメストアなど主要VODごとにまとめました。'
+description: '【推しの子】のアニメ配信状況を主要VOD別に解説。見放題対応や無料体験の有無もあわせて紹介します。'
+tags: ['推しの子', 'アニメ', 'VOD', '配信', 'どこで見れる']
 pubDate: 'Jan 11 2026'
 updatedDate: 'Jan 11 2026'
-heroImage: '../../assets/2026-anime-recommendations/frieren-s2.webp'
+heroImage: '../../assets/2026-anime-recommendations/oshi-no-ko-s3.webp'
 ---
 
-アニメ「**葬送のフリーレン**」は、
+アニメ「**【推しの子】**」は、
 
-静かな語りと時間の流れを描いたファンタジー作品として高い評価を受けています。
+芸能界を舞台に、サスペンスと人間ドラマが絡み合う話題作です。
 
 この記事では、
 
-**葬送のフリーレンがどのVODで見れるのか**、
+**【推しの子】がどのVODで見れるのか**、
 
 **見放題対応しているサービス**や**無料体験で視聴できるか**をまとめています。
 
@@ -22,8 +22,8 @@ heroImage: '../../assets/2026-anime-recommendations/frieren-s2.webp'
 
 ## 目次
 
-- [葬送のフリーレンの配信状況一覧](#葬送のフリーレンの配信状況一覧)
-- [Netflixでフリーレンは見れる？](#netflixでフリーレンは見れる)
+- [【推しの子】の配信状況一覧](#推しの子の配信状況一覧)
+- [Netflixで【推しの子】は見れる？](#netflixで推しの子は見れる)
 - [Amazon Prime Videoで見れる？](#amazon-prime-videoで見れる)
 - [dアニメストアで見れる？](#dアニメストアで見れる)
 - [U-NEXTで見れる？](#u-nextで見れる)
@@ -33,7 +33,7 @@ heroImage: '../../assets/2026-anime-recommendations/frieren-s2.webp'
 
 ---
 
-## 葬送のフリーレンの配信状況一覧
+## 【推しの子】の配信状況一覧
 
 | VODサービス | 配信状況 | 無料体験 |
 | --- | --- | --- |
@@ -46,13 +46,12 @@ heroImage: '../../assets/2026-anime-recommendations/frieren-s2.webp'
 ※ 公式の配信一覧はアニメ公式サイトのSTREAMINGページでも確認できます。
 ※ 配信状況は変更される可能性があります。
 
-
 ---
 
-## Netflixでフリーレンは見れる？
+## Netflixで【推しの子】は見れる？
 
-公式：  
-[Netflix公式サイトで「葬送のフリーレン」を確認する](https://www.netflix.com/search?q=葬送のフリーレン)
+公式：
+[Netflix公式サイトで「【推しの子】」を確認する](https://www.netflix.com/jp/title/81684733)
 
 **見れます。**
 
@@ -69,7 +68,7 @@ Netflixでは、
 ## Amazon Prime Videoで見れる？
 
 公式：  
-[Amazon Prime Video公式サイトで「葬送のフリーレン」を確認する](https://www.amazon.co.jp/s?k=葬送のフリーレン&i=instant-video)
+[Amazon Prime Video公式サイトで「【推しの子】」を確認する](https://www.amazon.co.jp/s?k=推しの子&i=instant-video)
 
 **見れます。**
 
@@ -77,35 +76,30 @@ Prime Videoでは、
 
 見放題対象またはレンタル配信として提供されていることがあります。
 
-初回30日間の無料体験を活用できるため、
-
-コストを抑えて視聴したい人にも向いています。
-
 ---
 
 ## dアニメストアで見れる？
 
 公式：  
-[dアニメストア公式サイトで「葬送のフリーレン」を確認する](https://animestore.docomo.ne.jp/animestore/sch_pc?searchKey=葬送のフリーレン)
+[dアニメストア公式サイトで「【推しの子】」を確認する](https://animestore.docomo.ne.jp/animestore/ci_pc?workId=26315)
 
 **見れます。**
 
 dアニメストアはアニメ特化型サービスのため、
 
 - 見放題対象になりやすい
-- 月額料金が安い
 - アニメ視聴に特化している
 
 という点が特徴です。
 
-**アニメ中心で楽しみたい人には最有力候補**です。
+※ 無料体験は「入会方法（ブラウザ/アプリ等）」で条件が変わるため、申込み画面で確認するのが確実です。
 
 ---
 
 ## U-NEXTで見れる？
 
 公式：  
-[U-NEXT公式サイトで「葬送のフリーレン」を確認する](https://video.unext.jp/search?query=葬送のフリーレン)
+[U-NEXT公式サイトで「【推しの子】」を確認する](https://www.video.unext.jp/title/SID0079682/c_txt%3Db)
 
 **見れます。**
 
@@ -113,18 +107,15 @@ U-NEXTでは、
 
 - 31日間の無料体験
 - 見放題作品数の多さ
-- 原作マンガも同時に楽しめる
 
 といったメリットがあります。
-
-アニメだけでなく、原作もまとめて楽しみたい人におすすめです。
 
 ---
 
 ## DMM TVで見れる？
 
 公式：  
-[DMM TV公式サイトで「葬送のフリーレン」を確認する](https://tv.dmm.com/vod/list/?keyword=葬送のフリーレン)
+[DMM TV公式サイトで「【推しの子】」を確認する](https://tv.dmm.com/vod/detail/?season=exeegpzuvbsr474crvddwhfvt)
 
 **見れます。**
 
@@ -132,11 +123,12 @@ DMM TVは、
 
 - 月額料金が安い
 - アニメ作品が充実している
-- 初回30日間の無料体験あり
 
 という点から、
 
 コスパ重視の人に向いているVODです。
+
+※ 無料体験は14日間と案内されることが多いです。
 
 ---
 
@@ -144,16 +136,15 @@ DMM TVは、
 
 目的別にまとめると、以下のようになります。
 
-- **無料体験で見たい** → Amazon Prime Video / dアニメストア / DMM TV
+- **無料体験で見たい** → U-NEXT / DMM TV /（条件が合えば）dアニメストア
 - **アニメ特化で楽しみたい** → dアニメストア / DMM TV
-- **原作も一緒に楽しみたい** → U-NEXT
 - **すでに契約中** → Netflix
 
 ---
 
 ## まとめ
 
-葬送のフリーレンは、
+【推しの子】は、
 
 主要な動画配信サービスで広く配信されています。
 
@@ -162,4 +153,4 @@ DMM TVは、
 
 自分の視聴スタイルに合ったサービスで、
 
-フリーレンの静かな旅を楽しんでください。
+【推しの子】を楽しんでください。

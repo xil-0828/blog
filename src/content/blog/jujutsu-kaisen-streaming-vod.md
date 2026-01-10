@@ -28,12 +28,14 @@ heroImage: '../../assets/2026-anime-recommendations/jujutsu-kaisen-s3.webp'
 | VODサービス | 配信状況 | 無料体験 |
 | --- | --- | --- |
 | Netflix | 見放題 | なし |
-| Amazon Prime Video | 見放題 | 30日間 |
-| dアニメストア | 見放題 | 31日間 |
+| Amazon Prime Video | 見放題 / レンタル | 30日間（要確認） |
+| dアニメストア | 見放題 | 無料体験あり（入会方法で異なる） |
 | U-NEXT | 見放題 | 31日間 |
-| DMM TV | 見放題 | 30日間 |
+| DMM TV | 見放題 | 14日間 |
 
+※ 公式の配信一覧はアニメ公式サイトのSTREAMINGページでも確認できます。
 ※ 配信状況は変更される可能性があります。
+
 
 ---
 
