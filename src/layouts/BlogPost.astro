@@ -10,12 +10,13 @@ import { SITE_TITLE } from "../consts";
 type Props = CollectionEntry<"blog">["data"];
 const { title, description, summary, tags, pubDate, updatedDate, heroImage } =
   Astro.props;
+const metaDescription = summary ?? description;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: title,
-  description,
+  description: metaDescription,
   datePublished: pubDate.toISOString(),
   ...(updatedDate ? { dateModified: updatedDate.toISOString() } : {}),
   ...(heroImage ? { image: new URL(heroImage.src, Astro.site).toString() } : {}),
@@ -31,7 +32,7 @@ const jsonLd = {
   <head>
     <BaseHead
       title={title}
-      description={description}
+      description={metaDescription}
       image={heroImage}
       ogType="article"
       pubDate={pubDate}
