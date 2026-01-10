@@ -28,9 +28,11 @@ const itemListJsonLd = {
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 
     <!-- Blog list structured data -->
-    <script type="application/ld+json">
-      {JSON.stringify(itemListJsonLd)}
-    </script>
+    <script
+  type="application/ld+json"
+  set:html={JSON.stringify(itemListJsonLd)}
+></script>
+
   </head>
 
 
