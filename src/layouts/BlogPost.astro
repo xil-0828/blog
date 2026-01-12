@@ -137,14 +137,16 @@ const breadcrumbJsonLd = {
         {
           heroImage && (
             <Image
-              src={heroImage}
-              widths={[480, 720, 1020]}
-              sizes="(max-width: 640px) 92vw, (max-width: 1024px) 720px, 720px"
-              alt={title}
-              loading="eager"
-              fetchpriority="high"
-              decoding="async"
-            />
+  src={heroImage}
+  widths={[360, 480, 720]}
+  sizes="(max-width: 480px) 92vw, (max-width: 1024px) 720px, 720px"
+  format="avif"
+  quality={40}
+  alt={title}
+  loading="eager"
+  fetchpriority="high"
+  decoding="async"
+/>
           )
         }
 
