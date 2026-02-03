@@ -185,17 +185,19 @@ const breadcrumbJsonLd = {
 
 
         <div class="text-center mb-16">
-          <p class="text-sm text-muted-foreground">
-            <FormattedDate date={pubDate} />
-          </p>
+          <div class="flex justify-center items-center gap-4 my-4">
+            <p class="text-sm text-gray-500">
+              作成日 <FormattedDate date={pubDate} />
+            </p>
 
-          {
-            updatedDate && (
-              <p class="text-xs italic text-muted-foreground mt-1">
-                Last updated on <FormattedDate date={updatedDate} />
-              </p>
-            )
-          }
+            {
+              updatedDate && (
+                <p class="text-sm text-gray-500">
+                  更新日 <FormattedDate date={updatedDate} />
+                </p>
+              )
+            }
+          </div>
 
           <h1 class="text-3xl font-bold mt-4">{title}</h1>
           <hr class="mt-6" />
@@ -211,19 +213,19 @@ const breadcrumbJsonLd = {
               {summary ?? description}
             </p>
           )
-        }
+        } -->
 
         {
           tags?.length ? (
             <div class="mt-4 flex flex-wrap justify-center gap-2">
               {tags.map((tag) => (
-                <span class="text-xs font-medium px-2 py-1 rounded-full bg-gray-100">
+                <span class="text-sm font-medium px-2.5 py-1 rounded-md bg-gray-100 text-gray-900">
                   #{tag}
                 </span>
               ))}
             </div>
           ) : null
-        } -->
+        }
       </article>
     </main>
 
