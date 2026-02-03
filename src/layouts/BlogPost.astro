@@ -42,17 +42,24 @@ const articleJsonLd = {
   ...(youtubeId
     ? {
         video: [
-  {
-    "@type": "VideoObject",
-    name: title,
-    description: metaDescription,
-    embedUrl: `https://www.youtube.com/embed/${youtubeId}`,
-    contentUrl: `https://www.youtube.com/watch?v=${youtubeId}`,
-    thumbnailUrl: `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`,
-    uploadDate: pubDate.toISOString(),
-    inLanguage: "ja",
-  }
-]
+          {
+            "@type": "VideoObject",
+            name: title,
+            description: metaDescription,
+            embedUrl: `https://www.youtube.com/embed/${youtubeId}`,
+            contentUrl: `https://www.youtube.com/watch?v=${youtubeId}`,
+            thumbnailUrl: `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`,
+            uploadDate: pubDate.toISOString(),
+            inLanguage: "ja",
+            publisher: {
+              "@id": "https://almondis.com/#organization",
+            },
+            potentialAction: {
+              "@type": "WatchAction",
+              target: `https://www.youtube.com/watch?v=${youtubeId}`,
+            },
+          },
+        ],
 
       }
     : {}),
@@ -132,6 +139,25 @@ const breadcrumbJsonLd = {
       type="application/ld+json"
       set:html={JSON.stringify(breadcrumbJsonLd)}
     />
+    <style is:inline>
+      .article-main {
+        width: 720px;
+        max-width: calc(100% - 2em);
+        margin: 0 auto;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      hr {
+	border: none;
+	border-top: 1px solid rgb(var(--gray-light));
+}
+
+
+    </style>
   </head>
 
   <body class="bg-white text-black flex flex-col gap-[64px]">
