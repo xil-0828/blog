@@ -160,7 +160,7 @@ const breadcrumbJsonLd = {
       <article class="w-full max-w-[720px] px-4 py-10">
         {
   youtubeId ? (
-    <div class="mb-8 aspect-video">
+    <div class="youtube-hero mb-8 aspect-video">
       <iframe
         src={`https://www.youtube.com/embed/${youtubeId}`}
         title={title}
@@ -233,4 +233,19 @@ const breadcrumbJsonLd = {
 
     <Footer />
   </body>
+  <style is:inline>
+.youtube-hero {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+}
+
+.youtube-hero iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+</style>
 </html>
