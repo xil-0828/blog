@@ -6,16 +6,18 @@ const blog = defineCollection({
 	loader: glob({ base: './src/content/blog', pattern: '**/*.{md,mdx}' }),
 	// Type-check frontmatter using a schema
 	schema: ({ image }) =>
-		z.object({
-			title: z.string(),
-			description: z.string(),
-			summary: z.string().optional(),
-			tags: z.array(z.string()).default([]),
-			// Transform string to Date object
-			pubDate: z.coerce.date(),
-			updatedDate: z.coerce.date().optional(),
-			heroImage: image().optional(),
-		}),
+  z.object({
+    title: z.string(),
+    description: z.string(),
+    summary: z.string().optional(),
+    tags: z.array(z.string()).default([]),
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    heroImage: image().optional(),
+
+    youtubeId: z.string().optional(), // ← ★これを追加
+  }),
+
 });
 
 export const collections = { blog };

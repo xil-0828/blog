@@ -8,7 +8,7 @@ import Header from "../components/Header.astro";
 import { SITE_TITLE } from "../consts";
 
 type Props = CollectionEntry<"blog">["data"];
-const { title, description, summary, tags, pubDate, updatedDate, heroImage } =
+const { title, description, summary, tags, pubDate, updatedDate, heroImage, youtubeId, } =
   Astro.props;
 
 const metaDescription = summary ?? description;
@@ -25,6 +25,8 @@ const articleJsonLd = {
   datePublished: pubDate.toISOString(),
   inLanguage: "ja",
   ...(updatedDate ? { dateModified: updatedDate.toISOString() } : {}),
+
+  // 記事の代表画像（今まで通り）
   ...(heroImage
     ? {
         image: {
@@ -35,15 +37,36 @@ const articleJsonLd = {
         },
       }
     : {}),
+
+  // 🔥 YouTube がある場合だけ VideoObject を追加
+  ...(youtubeId
+    ? {
+        video: {
+          "@type": "VideoObject",
+          name: title,
+          description: metaDescription,
+          embedUrl: `https://www.youtube.com/embed/${youtubeId}`,
+          thumbnailUrl: `https://i.ytimg.com/vi/${youtubeId}/maxresdefault.jpg`,
+          uploadDate: pubDate.toISOString(),
+          inLanguage: "ja",
+          publisher: {
+            "@id": "https://almondis.com/#organization",
+          },
+        },
+      }
+    : {}),
+
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": canonicalURL.toString(),
   },
+
   author: {
     "@type": "Person",
     "@id": "https://almondis.com/#author",
     name: "Almond",
   },
+
   publisher: {
     "@type": "Organization",
     "@id": "https://almondis.com/#organization",
@@ -56,6 +79,7 @@ const articleJsonLd = {
     },
   },
 };
+
 
 // Breadcrumb JSON-LD
 const breadcrumbJsonLd = {
@@ -135,20 +159,34 @@ const breadcrumbJsonLd = {
     <main class="article-main w-full flex justify-center">
       <article class="w-full max-w-[720px] px-4 py-10">
         {
-          heroImage && (
-            <Image
-  src={heroImage}
-  widths={[360, 480, 720]}
-  sizes="(max-width: 480px) 92vw, (max-width: 1024px) 720px, 720px"
-  format="avif"
-  quality={40}
-  alt={title}
-  loading="eager"
-  fetchpriority="high"
-  decoding="async"
-/>
-          )
-        }
+  youtubeId ? (
+    <div class="mb-8 aspect-video">
+      <iframe
+        src={`https://www.youtube.com/embed/${youtubeId}`}
+        title={title}
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="w-full h-full rounded-lg"
+      />
+    </div>
+  ) : (
+    heroImage && (
+      <Image
+        src={heroImage}
+        widths={[360, 480, 720]}
+        sizes="(max-width: 480px) 92vw, (max-width: 1024px) 720px, 720px"
+        format="avif"
+        quality={40}
+        alt={title}
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      />
+    )
+  )
+}
+
 
         <div class="text-center mb-16">
           <p class="text-sm text-muted-foreground">
