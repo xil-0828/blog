@@ -41,18 +41,19 @@ const articleJsonLd = {
   // 🔥 YouTube がある場合だけ VideoObject を追加
   ...(youtubeId
     ? {
-        video: {
-          "@type": "VideoObject",
-          name: title,
-          description: metaDescription,
-          embedUrl: `https://www.youtube.com/embed/${youtubeId}`,
-          thumbnailUrl: `https://i.ytimg.com/vi/${youtubeId}/maxresdefault.jpg`,
-          uploadDate: pubDate.toISOString(),
-          inLanguage: "ja",
-          publisher: {
-            "@id": "https://almondis.com/#organization",
-          },
-        },
+        video: [
+  {
+    "@type": "VideoObject",
+    name: title,
+    description: metaDescription,
+    embedUrl: `https://www.youtube.com/embed/${youtubeId}`,
+    contentUrl: `https://www.youtube.com/watch?v=${youtubeId}`,
+    thumbnailUrl: `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`,
+    uploadDate: pubDate.toISOString(),
+    inLanguage: "ja",
+  }
+]
+
       }
     : {}),
 
@@ -131,26 +132,6 @@ const breadcrumbJsonLd = {
       type="application/ld+json"
       set:html={JSON.stringify(breadcrumbJsonLd)}
     />
-    <style is:inline>
-      .article-main {
-        width: 720px;
-        max-width: calc(100% - 2em);
-        margin: 0 auto;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-      }
-      hr {
-	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
-}
-
-
-    </style>
-    
   </head>
 
   <body class="bg-white text-black flex flex-col gap-[64px]">
@@ -159,18 +140,7 @@ const breadcrumbJsonLd = {
     <main class="article-main w-full flex justify-center">
       <article class="w-full max-w-[720px] px-4 py-10">
         {
-  youtubeId ? (
-    <div class="youtube-hero mb-8 aspect-video">
-      <iframe
-        src={`https://www.youtube.com/embed/${youtubeId}`}
-        title={title}
-        loading="lazy"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        class="w-full h-full rounded-lg"
-      />
-    </div>
-  ) : (
+  (
     heroImage && (
       <Image
         src={heroImage}
@@ -233,19 +203,4 @@ const breadcrumbJsonLd = {
 
     <Footer />
   </body>
-  <style is:inline>
-.youtube-hero {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 */
-}
-
-.youtube-hero iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-}
-</style>
 </html>
