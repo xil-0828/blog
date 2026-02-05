@@ -1,0 +1,55 @@
+---
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+import FormattedDate from "./FormattedDate.astro";
+
+type Props = {
+  post: CollectionEntry<"blog">;
+};
+
+const { post } = Astro.props;
+---
+
+<div class="w-[281px] min-h-[196px] flex flex-col gap-[4px] self-start">
+  {post.data.heroImage && (
+    <a href={`/blog/${post.id}/`} class="block">
+      <div class="w-[281px] h-[147px] rounded-[8px] overflow-hidden bg-gray-100 transition hover:opacity-90">
+        <Image
+          src={post.data.heroImage}
+          width={562}
+          height={294}
+          alt={post.data.title}
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </a>
+  )}
+
+  <div class="text-[16px] font-medium leading-normal line-clamp-1">
+    {post.data.title}
+  </div>
+
+  {/*
+    (post.data.summary || post.data.description) && (
+      <div class="text-[12px] text-[#7c7c7c] leading-relaxed">
+        {post.data.summary ?? post.data.description}
+      </div>
+    )
+  */}
+
+  {/*
+    post.data.tags?.length ? (
+      <div class="flex flex-wrap gap-1">
+        {post.data.tags.map((tag) => (
+          <span class="text-[10px] px-2 py-0.5 rounded-full bg-gray-100">
+            #{tag}
+          </span>
+        ))}
+      </div>
+    ) : null
+  */}
+
+  <div class="text-[12px] text-[#5C687E]">
+    <FormattedDate date={post.data.pubDate} />
+  </div>
+</div>

@@ -1,10 +1,9 @@
 ---
-import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
-import FormattedDate from "../components/FormattedDate.astro";
 import Header from "../components/Header.astro";
+import ThumbnailCard from "../components/ThumbnailCard.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 
 const posts = (await getCollection("blog")).sort(
@@ -25,7 +24,6 @@ const itemListJsonLd = {
     },
   })),
 };
-
 ---
 <!doctype html>
 <html lang="ja">
@@ -63,54 +61,9 @@ const itemListJsonLd = {
     content-start
   "
 >
-      {posts.map(post => (
-        <div class="w-[281px] min-h-[196px] flex flex-col gap-[4px] self-start">
-
-          {post.data.heroImage && (
-            <a href={`/blog/${post.id}/`} class="block">
-              <div class="w-[281px] h-[147px] rounded-[8px] overflow-hidden bg-gray-100 transition hover:opacity-90">
-                <Image
-                  src={post.data.heroImage}
-                  width={562}
-                  height={294}
-                  alt={post.data.title}
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            </a>
-          )}
-
-          <div class="text-[16px] font-medium leading-normal line-clamp-1">
-            {post.data.title}
-          </div>
-
-          {/*
-            (post.data.summary || post.data.description) && (
-              <div class="text-[12px] text-[#7c7c7c] leading-relaxed">
-                {post.data.summary ?? post.data.description}
-              </div>
-            )
-          */}
-
-          {/*
-            post.data.tags?.length ? (
-              <div class="flex flex-wrap gap-1">
-                {post.data.tags.map((tag) => (
-                  <span class="text-[10px] px-2 py-0.5 rounded-full bg-gray-100">
-                    #{tag}
-                  </span>
-                ))}
-              </div>
-            ) : null
-          */}
-
-          <div class="text-[12px] text-[#5C687E]">
-            <FormattedDate date={post.data.pubDate} />
-          </div>
-
-        </div>
+      {posts.map((post) => (
+        <ThumbnailCard post={post} />
       ))}
-
     </main>
 
 
