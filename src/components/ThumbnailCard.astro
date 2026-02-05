@@ -25,9 +25,9 @@ const { post } = Astro.props;
     </a>
   )}
 
-  <div class="text-[16px] font-medium leading-normal line-clamp-2">
+  <a href={`/blog/${post.id}/`} class="text-[16px] font-medium leading-normal line-clamp-2 hover:underline">
     {post.data.title}
-  </div>
+  </a>
 
   {/*
     (post.data.summary || post.data.description) && (
