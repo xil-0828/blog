@@ -13,7 +13,7 @@ const posts = (await getCollection("blog")).sort(
 const itemListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "@id": "https://almondis.com/blog/#itemlist",
+  "@id": "https://almondis.com/#itemlist",
   itemListElement: posts.map((post, index) => ({
     "@type": "ListItem",
     position: index + 1,
@@ -32,6 +32,7 @@ const itemListJsonLd = {
 
     <!-- Blog list structured data -->
     <script
+  is:inline
   type="application/ld+json"
   set:html={JSON.stringify(itemListJsonLd)}
 ></script>
@@ -42,6 +43,8 @@ const itemListJsonLd = {
   <body class="text-black min-h-screen flex flex-col gap-[24px]">
 
   <Header />
+
+  <h1 class="sr-only">{SITE_TITLE}</h1>
 
   <main
   class="
